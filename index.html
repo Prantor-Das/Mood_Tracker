@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css' rel='stylesheet' />
+</head>
+<body>
+    <div class="container">
+        <h1>Daily Mood Tracker</h1>
+        <div class="mood-picker">
+            <h2>How are you feeling today?</h2>
+            <br>
+            <button aria-label="Happy" onclick= "logMood('happy')">😊 Happy</button>
+            <button aria-label="Sad" onclick= "logMood('sad')">😢 Sad</button>
+            <button aria-label="Neutral" onclick= "logMood('neutral')">😐 Neutral</button>
+            <button aria-label="Excited" onclick= "logMood('excited')">😃 Excited</button>
+        </div>
+        <div class="timeline">
+            <h2>Mood Timeline</h2>
+            <div id="mood-timeline"></div>
+        </div>
+        <div class="calendar">
+            <h2>Mood Calendar</h2>
+            <div id="mood-calendar"></div>
+        </div>
+    </div>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js'></script>
+    <script src="script.js"></script>
+</body>
+</html>
